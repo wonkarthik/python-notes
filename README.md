@@ -1,5 +1,5 @@
 # Python Notes
 
 ```
-Begineers python tutorial 
+Begineers Python Tutorial 
 ```

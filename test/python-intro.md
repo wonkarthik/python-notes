@@ -1,1 +1,0 @@
-# Welecome to Python class
