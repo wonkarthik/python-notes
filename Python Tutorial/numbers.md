@@ -1,5 +1,5 @@
-source: `{{ page.path }}`
 # Python Numbers
+source: `{{ page.path }}`
 
 In Python, there are three distinct numeric types:
 
