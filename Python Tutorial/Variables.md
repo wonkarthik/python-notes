@@ -1,6 +1,7 @@
 # Variables
 
 source: `{{ page.path }}`
+image: ![](./images/variable1.PNG)
 
 A variable is a container for a value. It can be assigned a name, you can use it to refer to it later in the program. Based on the value assigned, the interpreter decides its data type. You can always store a different type in a variable.
 
@@ -25,22 +26,28 @@ continue	exec	if	        nonlocal	return
 ```
 
 2. Assigning and Reassigning Python Variables
-To assign a value to Python variables, you don’t need to declare its type. You name it according to the rules stated in section 2a, and type the value after the equal sign(=).
+
+To assign a value to Python variables, you don’t need to declare its type. You name it according to the rules stated in section 2a, and type the value after the equal sign.
+
 ```
 age=7
-print(age) # 7 
+print(age) 
+7 
 
 age='Dinosaur'
-print(age) # Dinosaur
+print(age) 
+Dinosaur
 ```
+
 3. Multiple Assignment
 You can assign values to multiple Python variables in one statement.
+
 ```
 age,city=21,'Indore'
 print(age,city)
 21 Indore
 
-#Or you can assign the same value to multiple Python variables.
+ Or you can assign the same value to multiple Python variables.
 
 age=fav=7
 print(age,fav)
@@ -49,13 +56,14 @@ print(age,fav)
 
 4. Swapping Variables
 Swapping means interchanging values. To swap Python variables, you don’t need to do much.
+
 ```
 a,b='red','blue'
 a,b=b,a
 print(a,b)
 blue red
-```
 
+```
 5. Deleting Variables
 You can also delete Python variables using the keyword ‘del’.
 ```
@@ -63,7 +71,11 @@ a='red'
 del a
 a
 ```
-![](./images/variable1.PNG)
+
+```
+![]({{ page.image }})
+```
+![]({{ page.image }})
 
 ### Python Data Types
 Although we don’t have to declare a type for Python variables, a value does have a type. This information is vital to the interpreter. Python supports the following Python data types.
@@ -489,11 +501,11 @@ Another classification of Python variables is based on scope.
 
 1. Python Local Variables
 When you declare a variable in a function, class, or so, it is only visible in that scope. If you call it outside of that scope, you get an ‘undefined’ error.
-
->>> def func1():
+```        
+def func1():
   uvw=2
   print(uvw)
->>> func1()
+func1()
 2
 
 >>> uvw
@@ -501,35 +513,34 @@ Traceback (most recent call last):
 File “<pyshell#76>”, line 1, in <module>
 uvw
 NameError: name ‘uvw’ is not defined[/php]
-
+```
 Here, the variable uvw is local to function func1().
 
 2. Global Variables
 When you declare a variable outside any context/scope, it is visible in the whole program.
-
->>> xyz=3
->>> def func2():
+```
+xyz=3
+def func2():
   xyz=0
   xyz+=1
   print(xyz)
->>> func2()
+func2()
 1
 
->>> xyz
+xyz
 3
 You can use the ‘global’ keyword when you want to treat a variable as global in a local scope.
 
->>> foo=1
->>> def func2():
+foo=1
+def func2():
   global foo
   foo=3
   print(foo)
->>> func2()
+func2()
 3
 
->>> foo
+foo
 3
-
+```
 This was all about the Python Variables and data types tutorial.
 
-Summary
