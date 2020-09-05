@@ -386,7 +386,8 @@ a
 {1, 2, 3, 4}
 
 ```
-##### Type Conversion
+
+#### Type Conversion
 Since Python is dynamically-typed, you may want to convert a value into another type. Python supports a list of functions for the same.
 
 ```        
@@ -553,51 +554,3 @@ tuple(list(set([1,2])))
 (1, 2)
 
 ```
-### Python Local and Global Variables
-Another classification of Python variables is based on scope.
-
-1. Python Local Variables
-When you declare a variable in a function, class, or so, it is only visible in that scope. If you call it outside of that scope, you get an ‘undefined’ error.
-```        
-def func1():
-  uvw=2
-  print(uvw)
-func1()
-2
-
->>> uvw
-Traceback (most recent call last):
-File “<pyshell#76>”, line 1, in <module>
-uvw
-NameError: name ‘uvw’ is not defined[/php]
-```
-Here, the variable uvw is local to function func1().
-
-2. Global Variables
-When you declare a variable outside any context/scope, it is visible in the whole program.
-```
-xyz=3
-def func2():
-  xyz=0
-  xyz+=1
-  print(xyz)
-func2()
-1
-
-xyz
-3
-You can use the ‘global’ keyword when you want to treat a variable as global in a local scope.
-
-foo=1
-def func2():
-  global foo
-  foo=3
-  print(foo)
-func2()
-3
-
-foo
-3
-```
-This was all about the Python Variables and data types tutorial.
-
