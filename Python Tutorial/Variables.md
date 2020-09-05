@@ -71,11 +71,7 @@ a='red'
 del a
 a
 ```
-
-```
-![]({{ page.image }})
-```
-![]({{ page.image }})
+image: ![](./images/variable1.PNG)
 
 ### Python Data Types
 Although we don’t have to declare a type for Python variables, a value does have a type. This information is vital to the interpreter. Python supports the following Python data types.
