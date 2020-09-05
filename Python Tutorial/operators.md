@@ -69,7 +69,7 @@ Assignment operators are used to assign new values to variables.
 |//=	        | Floor division assignment	    |  x //= 3	     |   x = x // 3   |
 |**=	        | Exponentiation assignment	    |  x **= 3	     |   x = x ** 3   |
 |&=	            | Bitwise AND assignment	    |  x &= 3	     |   x = x & 3    |
-|=	            | Bitwise OR assignment	        |  x |= 3	     |   x = x | 3    |
+|=	            | Bitwise OR assignment	        |  `x |= 3`	     |   `x = x | 3`  |
 |^=	            | Bitwise XOR assignment	    |  x ^= 3	     |   x = x ^ 3    |
 |>>=	        | Bitwise right shift assignment|  x >>= 3	     |   x = x >> 3   |
 |<<=	        | Bitwise left shift assignment	|  x <<= 3	     |   x = x << 3   |
@@ -176,7 +176,7 @@ Binary operators are used to perform bit-level operations on (binary) numbers.
 |Operator	  |Meaning	     |Example  |
 |-------------|--------------|---------|
 |&	          |  AND	     |   x & y |
-||	          |  OR	         |   x | y |
+|`|`	      |  OR	         | `x | y` |
 |^	          |  XOR	     |   x ^ y |
 |~	          |  NOT	     |   ~x    |
 |<<	          |  Left shift  |	 x << 2|
@@ -217,7 +217,7 @@ Operators of highest precedence are performed first. Any operators of equal prec
 |                      |  not	                |        Boolean NOT                                      |
 |                      |  ==, ! =, <, <=, >, >=,|                                                         |
 |                      |  is, is not	        |        comparisons, identity                            |
-|                      |  |	                    |        bitwise OR                                       |
+|                      | `|`	                |        bitwise OR                                       |
 |                      |  ^	                    |        bitwise XOR                                      |
 |                      |  &	                    |        bitwise AND                                      |
 |                      |  <<, >>	            |        bitwise shis                                     |
