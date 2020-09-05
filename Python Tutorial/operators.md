@@ -58,34 +58,34 @@ For additional numeric operations see the [math module](https://docs.python.org/
 ### Assignment Operators
 Assignment operators are used to assign new values to variables.
 
-|Operator	    |Meaning	             |Example	     |Equivatent to  |
-|---------------|------------------------|---------------|---------------|
-|=	             Assignment	                x = 3	        x = 3        |
-|+=	             Addition assignment	    x += 3	        x = x + 3    |
-|-=	             Subtraction assignment	    x -= 3	        x = x – 3    |
-|*=	             Multiplication assignment	x *= 3	        x = x * 3    |
-|/=	             Division assignment	    x /= 3	        x = x / 3    |
-|%=	             Modulus assignment	        x %= 3	        x = x % 3    |
-|//=	         Floor division assignment	x //= 3	        x = x // 3   |
-|**=	         Exponentiation assignment	x **= 3	        x = x ** 3   |
-|&=	             Bitwise AND assignment	    x &= 3	        x = x & 3    |
-|=	             Bitwise OR assignment	    x |= 3	        x = x | 3    |
-|^=	             Bitwise XOR assignment	    x ^= 3	        x = x ^ 3    |
-|>>=	         Bitwise right shift assignment	x >>= 3	    x = x >> 3   |
-|<<=	         Bitwise left shift assignment	x <<= 3	    x = x << 3   |
+|Operator	    |Meaning	                    |Example	     |Equivatent to   |
+|---------------|-------------------------------|----------------|----------------|
+|=	            |Assignment	                    |  x = 3	     |   x = 3        |
+|+=	            | Addition assignment	        |  x += 3	     |   x = x + 3    |
+|-=	            | Subtraction assignment	    |  x -= 3	     |   x = x – 3    |
+|*=	            | Multiplication assignment	    |  x *= 3	     |   x = x * 3    |
+|/=	            | Division assignment	        |  x /= 3	     |   x = x / 3    |
+|%=	            | Modulus assignment	        |  x %= 3	     |   x = x % 3    |
+|//=	        | Floor division assignment	    |  x //= 3	     |   x = x // 3   |
+|**=	        | Exponentiation assignment	    |  x **= 3	     |   x = x ** 3   |
+|&=	            | Bitwise AND assignment	    |  x &= 3	     |   x = x & 3    |
+|=	            | Bitwise OR assignment	        |  x |= 3	     |   x = x | 3    |
+|^=	            | Bitwise XOR assignment	    |  x ^= 3	     |   x = x ^ 3    |
+|>>=	        | Bitwise right shift assignment|  x >>= 3	     |   x = x >> 3   |
+|<<=	        | Bitwise left shift assignment	|  x <<= 3	     |   x = x << 3   |
 
 
 ### Comparison Operators
 Comparison operators are used to compare two values.
 
-|Operator  |Meaning                   |Example  |
-|----------|--------------------------|---------|
-|==	        Equal to	                x == y  |
-|!=	        Not equal to	            x != y  |
-|>	        Greater than	            x > y   |
-|<	        Less than	                x < y   |
-|>=	        Greater than or equal to	x >= y  |
-|<=	        Less than or equal to	    x <= y  |
+|Operator  |Meaning                   |Example   |
+|----------|--------------------------|----------|
+|==	       | Equal to	              |  x == y  |
+|!=	       | Not equal to	          |  x != y  |
+|>	       | Greater than	          |  x > y   |
+|<	       | Less than	              |  x < y   |
+|>=	       | Greater than or equal to |	 x >= y  |
+|<=	       | Less than or equal to	  |  x <= y  |
 
 Here are some examples:
 ```
@@ -113,11 +113,11 @@ print(x <= y)		# False
 ### Logical Operators
 Logical operators are used to join two or more conditions.
 
-|Operator	        |Description	                                           |Example          | 
-|-------------------|----------------------------------------------------------|-----------------|
-|and	            Returns True if both statements are true	                x > 0 and y < 0  |
-|or	                Returns True if one of the statements is true	            x > 0 or y < 0   |
-|not	            Reverse the result, returns False if the result is true	not (x > 0 and y < 0)|
+|Operator	        |Description	                                            |Example              | 
+|-------------------|-----------------------------------------------------------|---------------------|
+|and	            |Returns True if both statements are true	                |x > 0 and y < 0      |
+|or	                |Returns True if one of the statements is true	            |x > 0 or y < 0       |
+|not	            |Reverse the result, returns False if the result is true	|not (x > 0 and y < 0)|
 
 Here are some examples:
 ```
@@ -136,10 +136,10 @@ print(not(x > 0 and y < 0))     # False
 ### Identity Operators
 Identity operators are used to check if two objects point to the same object, with the same memory location.
 
-|Operator	        |Description                                             |Example     |
-|-------------------|--------------------------------------------------------|------------|
-|is	                Returns true if both variables are the same object	        x is y    |
-|is not	            Returns true if both variables are not the same object	    x is not y|
+|Operator	        |Description                                             |Example      |
+|-------------------|--------------------------------------------------------|-------------|
+|is	                |Returns true if both variables are the same object	     |   x is y    |
+|is not	            |Returns true if both variables are not the same object	 |   x is not y|
 
 Here are some examples:
 ```
@@ -155,10 +155,10 @@ print(x is not y)	# True
 ### Membership Operators
 Membership operators are used to check if a specific item is present in a sequence (such as a string, tuple, list, or range) or a collection (such as a dictionary, set, or frozen set).
 
-|Operator	      |Description	                                      |Example          |
-|-----------------|---------------------------------------------------|-----------------|
-|in	              Returns True if a value is present in the sequence	x in y          |
-|not in	          Returns True if a value is not present in the sequence	x not in y  |     |
+|Operator	      |Description	                                         |Example          |
+|-----------------|------------------------------------------------------|-----------------|
+|in	              |Returns True if a value is present in the sequence	 |  x in y         |
+|not in	          |Returns True if a value is not present in the sequence|	x not in y     |
 
 Here are some examples:
 ```
@@ -173,14 +173,14 @@ print('yellow' not in L)    # True
 ### Bitwise Operators
 Binary operators are used to perform bit-level operations on (binary) numbers.
 
-|Operator	  |Meaning	 |Example |
-|-------------|----------|--------|
-|&	            AND	        x & y |
-||	            OR	        x | y |
-|^	            XOR	        x ^ y |
-|~	            NOT	        ~x    |
-|<<	            Left shift	x << 2|
-|>>	            Right shift	x >> 2|
+|Operator	  |Meaning	     |Example  |
+|-------------|--------------|---------|
+|&	          |  AND	     |   x & y |
+||	          |  OR	         |   x | y |
+|^	          |  XOR	     |   x ^ y |
+|~	          |  NOT	     |   ~x    |
+|<<	          |  Left shift  |	 x << 2|
+|>>	          |  Right shift |	 x >> 2|
 
 Here are some examples:
 ```
@@ -210,18 +210,18 @@ In Python, every operator is assigned a precedence. Operator Precedence determin
 
 Operators of highest precedence are performed first. Any operators of equal precedence are performed in left-to-right order.
 
-|Precedence	           |Operator	            |     Description                                        |
-|----------------------|------------------------|--------------------------------------------------------|
-|lowest precedence	     or	                            Boolean OR                                       | 
-|                        and	                        Boolean AND                                      |
-|                        not	                        Boolean NOT                                      |
-|                        ==, ! =, <, <=, >, >=,                                                          |
-|                        is, is not	                    comparisons, identity                            |
-|                        |	                            bitwise OR                                       |
-|                        ^	                            bitwise XOR                                      |
-|                        &	                            bitwise AND                                      |
-|                        <<, >>	                        bitwise shis                                     |
-|                        +, –	                        addition, subtraction                            |
-|                        *, /, //, %	                multiplication, division, floor division, modulo |
-|                        +x, -x, ~x	                    unary positive, unary negation, bitwise negation |
-|highest precedence	    **	                            exponentiation                                   |
+|Precedence	           |Operator	            |     Description                                         |
+|----------------------|------------------------|---------------------------------------------------------|
+|lowest precedence	   |  or	                |        Boolean OR                                       | 
+|                      |  and	                |        Boolean AND                                      |
+|                      |  not	                |        Boolean NOT                                      |
+|                      |  ==, ! =, <, <=, >, >=,|                                                         |
+|                      |  is, is not	        |        comparisons, identity                            |
+|                      |  |	                    |        bitwise OR                                       |
+|                      |  ^	                    |        bitwise XOR                                      |
+|                      |  &	                    |        bitwise AND                                      |
+|                      |  <<, >>	            |        bitwise shis                                     |
+|                      |  +, –	                |        addition, subtraction                            |
+|                      |  *, /, //, %	        |        multiplication, division, floor division, modulo |
+|                      |  +x, -x, ~x	        |        unary positive, unary negation, bitwise negation |
+|highest precedence	   |  **	                |        exponentiation                                   |
