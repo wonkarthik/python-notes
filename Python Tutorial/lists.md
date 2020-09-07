@@ -16,16 +16,16 @@ The important properties of Python lists are as follows:
 ```tip
 # Python Lists
 
-Lists is a collection of values/elements.
-list is represented in [] brackets
-list allows both Homeogenous & Hetrogenous values/elements
-Lists are mutable
-list allow duplicate values/elements
-lists allow indexing and slicing
-Implication of iterations is Time-consuming
-The list is better for performing operations, such as insertion and deletion.
-Lists consume more memory
-Lists have several built-in methods
+1. Lists is a collection of values/elements.
+2. list is represented in [] brackets.
+3. list allows both Homeogenous & Hetrogenous values/elements.
+4. Lists are mutable.
+5. list allow duplicate values/elements.
+6. lists allow indexing and slicing.
+7. Implication of iterations is Time-consuming.
+8. The list is better for performing operations, such as insertion and deletion.
+9. Lists consume more memory.
+10. Lists have several built-in methods
 
 ```
 Python List Tutorial.
@@ -33,23 +33,20 @@ Python List Tutorial.
 ```note
 ## Lists operations
 
-Creating Lists
-Accessing Lists
-Slicing Lists
-Reassigning Lists
-Deleting Lists
-Multidimension Lists
-Concatenation Lists
-Operation Lists
-Iterable Lists
-Lists Comprehension
-Built-in Functions :  min,max,sum,len,all,any,list,sorted
-Built-in Methods   :  append,insert,remove,pop,index,clear,reverse,count,sort
-```
-```note
-This is note3
-```
+| lists 
+|----------------------------------------------------------------------------------|
+|                                                                                  |
+|    Creating Lists                                                                |
+|    Accessing Lists                                                               |
+|    Slicing Lists                                                                 |
+|    Reassigning Lists                                                             |
+|    Deleting Lists                                                                |
+|    Multidimension Lists                                                          |
+|    Concatenation Lists                                                           |
+|    Operation Lists                                                               |
+|    Iterable Lists                                                                |
+|    Lists Comprehension                                                           |
+|    Built-in Functions :  min,max,sum,len,all,any,list,sorted                     |
+|    Built-in Methods   :  append,insert,remove,pop,index,clear,reverse,count,sort |
 
-```tip
-It’s bigger than a bread box.
 ```
