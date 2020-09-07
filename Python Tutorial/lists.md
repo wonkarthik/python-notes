@@ -33,20 +33,17 @@ Python List Tutorial.
 ```note
 ## Lists operations
 
-| lists 
-|----------------------------------------------------------------------------------|
-|                                                                                  |
-|    Creating Lists                                                                |
-|    Accessing Lists                                                               |
-|    Slicing Lists                                                                 |
-|    Reassigning Lists                                                             |
-|    Deleting Lists                                                                |
-|    Multidimension Lists                                                          |
-|    Concatenation Lists                                                           |
-|    Operation Lists                                                               |
-|    Iterable Lists                                                                |
-|    Lists Comprehension                                                           |
-|    Built-in Functions :  min,max,sum,len,all,any,list,sorted                     |
-|    Built-in Methods   :  append,insert,remove,pop,index,clear,reverse,count,sort |
+1.  Creating Lists                                                               
+2.  Accessing Lists                                                               
+3.  Slicing Lists                                                                 
+4.  Reassigning Lists                                                             
+5.  Deleting Lists                                                                
+6.  Multidimension Lists                                                          
+7.  Concatenation Lists                                                           
+8.  Operation Lists                                                               
+9.  Iterable Lists                                                                
+10. Lists Comprehension                                                           
+11. `Built-in Functions :`  min,max,sum,len,all,any,list,sorted                     
+12. `Built-in Methods   :`  append,insert,remove,pop,index,clear,reverse,count,sort 
 
 ```
