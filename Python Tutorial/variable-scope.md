@@ -1,3 +1,7 @@
+# Variable scope
+
+source: `{{ page.path }}`
+
 Not all variables are accessible from all parts of our program. The part of the program where the variable is accessible is called its “scope” and is determined by where the variable is declared.
 
 Python has three different variable scopes:
