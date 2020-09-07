@@ -305,6 +305,8 @@ print(squares)
 
 ```             
 ##  Operator (Unpacking)
+
+```
 list1=[1,2,3,4]  
 list2=[5,6,7,8]
 list3=[9,10,11,12]
@@ -324,7 +326,7 @@ print(a)                # [1, 2, 3, 1, 2, 3, 1, 2, 3]
 
 ```
 
-# Built -in list functions
+##  Built -in list functions
 
 |Method	        |Description                                                  |
 |---------------|-------------------------------------------------------------|
