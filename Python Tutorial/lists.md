@@ -179,21 +179,27 @@ here we can't add the new element it throw error we need to reassign whole list
 ## deleting multiple elements
 
 list=["caramel","gold","silver","occur"]
-del list
-print(list)
+# del list
+# print(list)
 
 list=["caramel","gold","silver","occur","Bauxite"]
 del list[2:5]
-print(list)     # ['caramel', 'gold']
+print(list)    
+# ['caramel', 'gold']
+
 del list[2:]
-print(list)     # ['caramel', 'gold']
+print(list)     
+# ['caramel', 'gold']
+
 del list[:2]
-print(list)     # ['silver', 'occur', 'Bauxite']
+print(list)     
+# ['silver', 'occur', 'Bauxite']
 
 delete single element
 list=["caramel","gold","silver","occur"]
 del list[1]
-print(list)     # ['caramel', 'silver', 'occur']
+print(list)     
+# ['caramel', 'silver', 'occur']
 
 ## Multidimensional list in python
 ```
@@ -209,11 +215,11 @@ test=a[0][1][1]
 ## Concatenation of python list
 
 ```
-`1. Concatenation Operator(+)`
+1. `Concatenation Operator(+)`
 a,b,c=[3,1,2],[5,4,6],[7,8]
 print(a+b+c)                  # [3,1,2,5,4,6,7,8]
 
-`2. loops : `
+2. `loops : `
 list1=[1,2,3]
 list2=[8,4,5]
 
@@ -233,7 +239,7 @@ for z in list3:
     result.append(z)    
 print(result)                   # [1,2,3,4,5,6,7,8,9,10,11,12]
 
-`3. Comprehensions : `
+3. `Comprehensions : `
 
 list1=[1,2,3,4]  
 list2=[5,6,7,8]
