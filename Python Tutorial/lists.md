@@ -88,22 +88,24 @@ print(l1[1:-2]) # 20,30
 
 ```
 ```note
-a[start:stop]  # items start through stop-1
-a[start:]      # items start through the rest of the array
-a[:stop]       # items from the beginning through stop-1
-a[:]           # a copy of the whole array
-
-slicing
-a[start:stop:step] # start through not past stop, by step
-
-a[-1]    # last item in the array
-a[-2:]   # last two items in the array
-a[:-2]   # everything except the last two items
-
-a[::-1]    # all items in the array, reversed
-a[1::-1]   # the first two items, reversed
-a[:-3:-1]  # the last two items, reversed
-a[-3::-1]  # everything except the last two items, reversed
+| synatax          | Explanation                                               |
+|------------------|-----------------------------------------------------------|
+|a[start:stop]     | # items start through stop-1                              |
+|a[start:]         | # items start through the rest of the array               |
+|a[:stop]          | # items from the beginning through stop-1                 |
+|a[:]              | # a copy of the whole array                               |
+|                  |                                                           |
+| slicing          | Explanation                                               |    
+|a[start:stop:step]| # start through not past stop, by step                    |
+|                  |                                                           |
+|a[-1]             | # last item in the array                                  |
+|a[-2:]            | # last two items in the array                             |
+|a[:-2]            | # everything except the last two items                    |
+|                  |                                                           |
+|a[::-1]           | # all items in the array, reversed                        |
+|a[1::-1]          | # the first two items, reversed                           |
+|a[:-3:-1]         | # the last two items, reversed                            |
+|a[-3::-1]         | # everything except the last two items, reversed          |
 
 Both +ve and -ve index no are move in -> direction
 in +ve index start values is greater than stop values of the list  then it will be empty
@@ -178,6 +180,7 @@ here we can't add the new element it throw error we need to reassign whole list
 ```
 ## deleting multiple elements
 
+```
 list=["caramel","gold","silver","occur"]
 # del list
 # print(list)
@@ -201,7 +204,9 @@ del list[1]
 print(list)     
 # ['caramel', 'silver', 'occur']
 
+```
 ## Multidimensional list in python
+
 ```
 grocery_list=[['caramel','P&B','Jelly'],['onions','potatoes'],['flour','oil']
 print(grocery_list[0][0])
@@ -215,17 +220,23 @@ test=a[0][1][1]
 ## Concatenation of python list
 
 ```
-1. `Concatenation Operator(+)`
+Concatenation Operator(+)
 a,b,c=[3,1,2],[5,4,6],[7,8]
-print(a+b+c)                  # [3,1,2,5,4,6,7,8]
+print(a+b+c)                  
+# [3,1,2,5,4,6,7,8]
 
-2. `loops : `
+```
+##  Iteration with loops 
+
+```
 list1=[1,2,3]
 list2=[8,4,5]
 
 for list in list2:
     list1.append(list)
-print(list1)                   # [1,2,3,8,4,5]
+print(list1)                  
+
+# [1,2,3,8,4,5]
 
 list1=[1,2,3,4]
 list2=[5,6,7,8]
@@ -237,46 +248,9 @@ for y in list2:
     result.append(y)
 for z in list3:
     result.append(z)    
-print(result)                   # [1,2,3,4,5,6,7,8,9,10,11,12]
+print(result)                  
 
-3. `Comprehensions : `
-
-list1=[1,2,3,4]  
-list2=[5,6,7,8]
-list3=[9,10,11,12]
-
-result = [element for lis in [list1, list2] for element in lis]
-print(result)                   # [1,2,3,4,5,6,7,8]
-
-result1 = [ element for list in [list1,list2,list3] for element in list]
-print(result1)                   # [1,2,3,4,5,6,7,8,9,10,11,12]           
-
-result2 = [element for lis in [list1] for element in lis]
-print(result2)                  # [1,2,3,5]    
-even=[2*i for i in range(1,11)]
-print(even)                     # [2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
-
-list1=[1,2,3]
-list2=[4,5,6]
-CombLst=[(x,y) for x in list1 for y in list2]
-print(CombLst)              
-
-# [1,2,3,4,5,6]
-
-list = [x for x in range(21) if x%2==0]
-print(list)             
-
-# [0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
-
-obj=["Even" if i%2==0 else "Odd" for i in range(10)]
-print(obj)                           
-
-# ['Even', 'Odd', 'Even', 'Odd', 'Even', 'Odd', 'Even', 'Odd', 'Even', 'Odd']
-
-squares = [x*x for x in range(11)]
-print(squares)                      
-
-# [0, 1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+# [1,2,3,4,5,6,7,8,9,10,11,12]
 
 mylist=['Dave','Micheal','Harry','Jon']
 k= []
@@ -286,8 +260,51 @@ for x in mylist:
     else:
         k.append(x.lower())
 print(k)
-             
-`4. * Operator (Unpacking)`
+
+```
+##  List Comprehensions : 
+
+```
+list1=[1,2,3,4]  
+list2=[5,6,7,8]
+list3=[9,10,11,12]
+
+result = [element for lis in [list1, list2] for element in lis]
+print(result)                  
+# [1,2,3,4,5,6,7,8]
+
+result1 = [ element for list in [list1,list2,list3] for element in list]
+print(result1)                  
+# [1,2,3,4,5,6,7,8,9,10,11,12]           
+
+result2 = [element for lis in [list1] for element in lis]
+print(result2)                 
+# [1,2,3,5]    
+
+even=[2*i for i in range(1,11)]
+print(even)                     
+# [2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
+
+list1=[1,2,3]
+list2=[4,5,6]
+CombLst=[(x,y) for x in list1 for y in list2]
+print(CombLst)              
+# [1,2,3,4,5,6]
+
+list = [x for x in range(21) if x%2==0]
+print(list)             
+# [0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
+
+obj=["Even" if i%2==0 else "Odd" for i in range(10)]
+print(obj)                           
+# ['Even', 'Odd', 'Even', 'Odd', 'Even', 'Odd', 'Even', 'Odd', 'Even', 'Odd']
+
+squares = [x*x for x in range(11)]
+print(squares)                      
+# [0, 1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+
+```             
+##  Operator (Unpacking)
 list1=[1,2,3,4]  
 list2=[5,6,7,8]
 list3=[9,10,11,12]
@@ -295,25 +312,16 @@ print([*list1,*list2,*list3])
 
 # [1,2,3,4,5,6,7,8,9,10,11,12]
 
-`5. extend() Built-in Method`
-list1=[1,2,3,4]  
-list2=[5,6,7,8]
-list3=[9,10,11,12]
-
-concatenating lists using extend() method
-list1.extend(list2)
-list1.extend(list3)
-print(list1)           
-
-# [1,2,3,4,5,6,7,8,9,10,11,12]
 ```
 
 ## Python List operations
+
 ```
 multiplications
 a=[1,2,3]
 a*=3 
 print(a)                # [1, 2, 3, 1, 2, 3, 1, 2, 3]
+
 ```
 
 # Built -in list functions
