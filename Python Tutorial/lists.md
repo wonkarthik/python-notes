@@ -13,7 +13,7 @@ The important properties of Python lists are as follows:
 * Lists can contain any sort of object – It can be numbers, strings, tuples and even other lists.
 * Lists are changeable (mutable) – You can change a list in-place, add new items, and delete or update existing items.
 
-```Note
+```tip
 # Python Lists
 
 Lists is a collection of values/elements.
@@ -30,7 +30,7 @@ Lists have several built-in methods
 ```
 Python List Tutorial.
 
-```Note 
+```note
 ## Lists operations
 
 Creating Lists
