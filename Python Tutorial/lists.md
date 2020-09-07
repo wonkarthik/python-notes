@@ -14,7 +14,6 @@ The important properties of Python lists are as follows:
 * Lists are changeable (mutable) – You can change a list in-place, add new items, and delete or update existing items.
 
 ```Python Lists
-
 Lists is a collection of values/elements.
 list is represented in [] brackets
 list allows both Homeogenous & Hetrogenous values/elements
@@ -25,6 +24,8 @@ Implication of iterations is Time-consuming
 The list is better for performing operations, such as insertion and deletion.
 Lists consume more memory
 Lists have several built-in methods
+```
+Python List Tutorial.
 
 ``` Lists operations
 Creating Lists
@@ -39,5 +40,4 @@ Iterable Lists
 Lists Comprehension
 Built-in Functions :  min,max,sum,len,all,any,list,sorted
 Built-in Methods   :  append,insert,remove,pop,index,clear,reverse,count,sort
-
 ```
