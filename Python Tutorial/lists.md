@@ -46,3 +46,10 @@ Lists Comprehension
 Built-in Functions :  min,max,sum,len,all,any,list,sorted
 Built-in Methods   :  append,insert,remove,pop,index,clear,reverse,count,sort
 ```
+```note
+This is note3
+```
+
+```tip
+It’s bigger than a bread box.
+```
