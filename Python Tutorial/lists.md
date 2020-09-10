@@ -87,7 +87,7 @@ print(l1[2:-2]) # 30
 print(l1[1:-2]) # 20,30
 
 ```
-```note
+
 | synatax          | Explanation                                               |
 |------------------|-----------------------------------------------------------|
 |a[start:stop]     | # items start through stop-1                              |
@@ -107,6 +107,7 @@ print(l1[1:-2]) # 20,30
 |a[:-3:-1]         | # the last two items, reversed                            |
 |a[-3::-1]         | # everything except the last two items, reversed          |
 
+```Note
 Both +ve and -ve index no are move in -> direction
 in +ve index start values is greater than stop values of the list  then it will be empty
 in -ve index start value is greater than stop value of the list then it will be empty ex: [ -5,-6]  
