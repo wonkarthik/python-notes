@@ -318,13 +318,39 @@ print([*list1,*list2,*list3])
 
 ## Python List operations
 
-```
-multiplications
-a=[1,2,3]
-a*=3 
-print(a)                # [1, 2, 3, 1, 2, 3, 1, 2, 3]
 
-```
+|Operator	        |Description	                                                               |Example                              |
+|-------------------|------------------------------------------------------------------------------|-------------------------------------|
+| + Concatenation	|Returns a list containing all the elements of the first and the second list.  | >>> L1=[1,2,3]                      |
+|                   |                                                                              | >>> L2=[4,5,6]                      |
+|                   |                                                                              | >>> L1+L2                           |
+|                   |                                                                              | [1, 2, 3, 4, 5, 6]                  |
+| * Repetition	    |Concatenates multiple copies of the same list.                                | >>> L1*4                            |
+|                   |                                                                              | [1, 2, 3, 1, 2, 3, 1, 2, 3, 1, 2, 3]|
+|                   |                                                                              |                                     |
+| [] slice	        |Returns the item at the given index. A negative index counts the position     |>>> L1=[1, 2, 3, 4, 5, 6]            |
+|                   | from the right side.	                                                       |>>> L1[3]                            |
+|                   |                                                                              | 4                                   |
+|                   |                                                                              | >>> L1[-2]                          |
+|                   |                                                                              | 5                                   |
+|                   |                                                                              |                                     |
+| [ : ]             | Range slice	Fetches items in the range specified by the two index operands | >>> L1=[1, 2, 3, 4, 5, 6]           |
+|                   | separated by : symbol.                                                       | >>> L1[1:4]                         |
+|                   | If the first operand is omitted, the range starts from the zero index. If the| [2, 3, 4]                           |
+|                   | second operand is omitted, the range goes up to the end of the list.	       | >>> L1[3:]                          |
+|                   |                                                                              | [4, 5, 6]                           |
+|                   |                                                                              | >>> L1[:3]                          |
+|                   |                                                                              | [1, 2, 3]                           |  
+| in                | Returns true if an item exists in the given list.	                           | >>> L1=[1, 2, 3, 4, 5, 6]           |
+|                   |                                                                              | >>> 4 in L1                         |
+|                   |                                                                              | True                                |
+|                   |                                                                              | >>> 10 in L1                        |
+|                   |                                                                              | False                               |
+| not in            | Returns true if an item does not exist in the given list.	                   | >>> L1=[1, 2, 3, 4, 5, 6]           |
+|                   |                                                                              | >>> 5 not in L1                     |
+|                   |                                                                              | False                               |
+|                   |                                                                              | >>> 10 not in L1                    |
+|                   |                                                                              | True                                |
 
 ##  Built -in list functions
 
