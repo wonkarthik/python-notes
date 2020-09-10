@@ -95,13 +95,11 @@ print(l1[1:-2]) # 20,30
 |a[:stop]          | # items from the beginning through stop-1                 |
 |a[:]              | # a copy of the whole array                               |
 |                  |                                                           |
-| slicing          | Explanation                                               |    
+| `Slicing`        | `Explanation`                                             |    
 |a[start:stop:step]| # start through not past stop, by step                    |
-|                  |                                                           |
 |a[-1]             | # last item in the array                                  |
 |a[-2:]            | # last two items in the array                             |
 |a[:-2]            | # everything except the last two items                    |
-|                  |                                                           |
 |a[::-1]           | # all items in the array, reversed                        |
 |a[1::-1]          | # the first two items, reversed                           |
 |a[:-3:-1]         | # the last two items, reversed                            |
@@ -110,8 +108,10 @@ print(l1[1:-2]) # 20,30
 ```Note
 Both +ve and -ve index no are move in -> direction
 in +ve index start values is greater than stop values of the list  then it will be empty
-in -ve index start value is greater than stop value of the list then it will be empty ex: [ -5,-6]  
+in -ve index start value is greater than stop value of the list then it will be empty ex: [ -5,-6]
+
 ```
+
 ```
 syntax = [start:stop]
 
