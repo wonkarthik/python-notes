@@ -106,15 +106,11 @@ print(l1[1:-2]) # 20,30
 |a[-3::-1]         | # everything except the last two items, reversed          |
 
 
-```Note
-
+```
 Both +ve and -ve index no are move in -> direction
 in +ve index start values is greater than stop values of the list  then it will be empty
 in -ve index start value is greater than stop value of the list then it will be empty ex: [ -5,-6]
 
-```
-
-```
 syntax = [start:stop]
 
 l2= [10,20,30,40,50,60,70]
