@@ -62,7 +62,7 @@ print(S)
 ```
 ## Deleting a set 
 
-```sh
+```python
 numbers={3,2,1,4,6,5}
 
 1. `discard()` : This method takes the item to delete as an argument.
@@ -83,9 +83,7 @@ print(numbers)
 
 `discard() vs remove()`-
 
-These two methods may appear the same to you, but there’s actually a difference. 
-If you try deleting an item that doesn’t exist in the set, discard() ignores it, 
-but remove() raises a KeyError.
+These two methods may appear the same to you, but there’s actually a difference. If you try deleting an item that doesn’t exist in the set, discard() ignores it, but remove() raises a KeyError.
 
 numbers.discard(7)
 print(numbers)
@@ -100,10 +98,9 @@ KeyError: 7
 
 3. `pop()`
 
-Like on a dictionary, you can call the pop() method on a set. However, here, it does not 
-take an argument. Because a set doesn’t support indexing, there is absolutely no way to
-pass an index to the pop method. Hence, it pops out an arbitrary item. Furthermore, it 
-prints out the item that was popped.
+Like on a dictionary, you can call the pop() method on a set. However, here, it does not take an argument. Because 
+a set doesn’t support indexing, there is absolutely no way to pass an index to the pop method. Hence, it pops out an 
+arbitrary item. Furthermore, it prints out the item that was popped.
 
 numbers.pop()
 1
@@ -144,12 +141,12 @@ method on tuples, lists, and strings.
 ```javascript
 numbers={3,1,2,4,6,5}
 
-1 . add()  If you add an existing item in the set, the set remains unaffected.
+1 . `add()`  If you add an existing item in the set, the set remains unaffected.
 
 print(numbers.add(3.5))
 {1, 2, 3, 4, 5, 6, 3.5}
 
-2. update() This method can add multiple items to the set at once, which it takes as arguments.
+2. `update()` This method can add multiple items to the set at once, which it takes as arguments.
 
 print(numbers.update([7,8],{1,2,9}))
 {1, 2, 3, 4, 5, 6, 3.5, 7, 8, 9}
@@ -178,6 +175,7 @@ B = {4, 5, 6, 7, 8}
 
 #### Set Union
 Union of A and B is a set of all elements from both sets.You can perform union on two or more sets using union() method or  |  operator.
+
 ![](./images/union.PNG)
 
 ```python
@@ -223,5 +221,194 @@ Symmetric difference is performed using ^ operator. Same can be accomplished usi
 print(A ^ B)                         # {1, 2, 3, 6, 7, 8}   
 # by method  
 print(A.symmetric_difference(B))     # {1, 2, 3, 6, 7, 8}
+
+```
+
+#### Set intersection_update()
+
+The intersection of two or more sets is the set of elements which are common to all sets.
+
+A.intersection_update(*other_sets)
+
+This method returns None (meaning it does not have a return value). It only updates the set calling the intersection_update() method.
+
+For example:
+
+result = A.intersection_update(B, C)
+
+result will be None
+A will be equal to the intersection of A, B, and C
+B remains unchanged
+C remains unchanged
+```python
+A = {1, 2, 3, 4}
+B = {2, 3, 4, 5, 6}
+C = {4, 5, 6, 9, 10}
+
+result = A.intersection_update(B)
+
+print('result =', result)           # result = None
+print('A =', A)                     # A = {2,3,4}
+print('B =', B)                     # B = {2,3,4,5}
+
+intersection_update() with Two Parameters
+
+result = C.intersection_update(B, A)
+
+print('result =', result)           # result = None
+print('C =', C)                     # C = {4}
+print('B =', B)                     # B = {2, 3, 4, 5, 6}
+print('A =', A)                     # A = {1, 2, 3, 4}
+```
+#### Set difference_update()
+
+If A and B are two sets. The set difference of A and B is a set of elements that exists only in set A but not in B
+```python
+A.difference_update(B)
+Here, A and B are two sets. difference_update() updates set A with the set difference of A-B.
+
+A = {1, 2, 3, 4}
+B = {2, 3, 4, 5, 6}
+C = {4, 5, 6, 9, 10}
+
+result = A.difference_update(B)
+print('result =', result)           # result = None
+print('A =', A)                     # A = {1}
+print('B =', B)                     # B = {2, 3, 4, 5, 6}
+
+print(C.difference_update(B, A))            # none
+print('A =',A)                              # A = {1, 2, 3, 4}
+print('B =',B)                              # B = {2, 3, 4, 5, 6}
+print('C =',C)                              # C = {9, 10}
+```
+
+#### Set symmetric_difference_update()
+The symmetric difference of two sets A and B is the set of elements that are in either A or B, but not in their intersection.
+```python
+A = {1, 2, 3, 4}
+B = {2, 3, 4, 5, 6}
+C = {4, 5, 6, 9, 10}
+
+result = A.symmetric_difference_update(B)
+print('result =', result)           # result = None
+print('A =', A)                     # A = {1, 5, 6}
+print('B =', B)                     # B = {2, 3, 4, 5, 6}
+
+Here, the set A is updated with the symmetric difference of set A and B. However, the set B is unchanged.
+
+result = C.symmetric_difference_update(B)
+print("result = ", result)                  # result = none
+print('A =',A)                              # A = {1, 2, 3, 4}
+print('B =',B)                              # B = {2, 3, 4, 5, 6}
+print('C =',C)                              # C = {9, 10}
+
+"Note :" Multiple argument are not possible
+```
+#### isdisjoint()	
+Two sets are said to be disjoint sets if they have no common elements.
+```python
+A = {1, 5, 9, 0}
+B = {2, 4, -5}
+Here A and B are disjoint sets.
+
+A = {1, 2, 3, 4}
+B = {5, 6, 7}
+C = {4, 5, 6}
+
+print('Are A and B disjoint?', A.isdisjoint(B))  # Are A and B disjoint? True
+print('Are A and C disjoint?', A.isdisjoint(C))  # Are A and C disjoint? False
+
+A = {'a', 'b', 'c', 'd'}
+B = ['b', 'e', 'f']
+C = '5de4'
+D ={1 : 'a', 2 : 'b'}
+E ={'a' : 1, 'b' : 2}
+
+print('Are A and B disjoint?', A.isdisjoint(B))   # Are A and B disjoint? False
+print('Are A and C disjoint?', A.isdisjoint(C))   # Are A and C disjoint? False
+print('Are A and D disjoint?', A.isdisjoint(D))   # Are A and D disjoint? True
+print('Are A and E disjoint?', A.isdisjoint(E))   # Are A and E disjoint? False
+
+```
+#### issubset()	
+Determines whether one set is a subset of the other
+
+Set A is said to be the subset of set B if all elements of A are in B
+```python
+Syntax: A.issubset(B)
+
+A = {1, 2, 3}
+B = {1, 2, 3, 4, 5}
+C = {1, 2, 4, 5}
+
+print(A.issubset(B))                # Returns True
+
+# B is not subset of A
+print(B.issubset(A))                # Returns False
+
+print(A.issubset(C))                # Returns False
+
+print(C.issubset(B))                # Returns True
+
+```
+#### issuperset
+Determines whether one set is a superset of the other
+
+Set X is said to be the superset of set Y if all elements of Y are in X
+```python
+A = {1, 2, 3, 4, 5}
+B = {1, 2, 3}
+C = {1, 2, 3}
+
+Set A is said to be the subset of set B if all elements of B are in A
+
+`Syntax: A.issuperset(B)`
+
+print(A.issuperset(B))      # Returns True
+print(B.issuperset(A))      # Returns False
+print(C.issuperset(B))      # Returns True
+
+x = { 2, 4, 6, 8 }
+y = { 2, 8 }
+f1 = x.issuperset(y) # f1 = True
+f2 = y.issuperset(x) # f2 = False
+
+```
+## Python Frozenset
+Python provides another built-in type called a frozenset. Frozenset is just like set, only immutable (unchangeable).
+
+You can create a frozenset using frozenset() method. It freezes the given sequence and makes it unchangeable.
+```python
+S = frozenset({'red', 'green', 'blue'})
+print(S)
+# Prints frozenset({'green', 'red', 'blue'})
+
+As frozensets are unchangeable, you can perform non-modifying operations on them
+
+# finding size
+S = frozenset({'red', 'green', 'blue'})
+print(len(S))
+# Prints 3
+
+# performing union
+S = frozenset({'red', 'green', 'blue'})
+print(S | {'yellow'})
+# Prints frozenset({'blue', 'green', 'yellow', 'red'})
+```
+methods that attempt to modify a frozenset will raise error.
+```python
+# removing an item
+S = frozenset({'red', 'green', 'blue'})
+S.pop()
+# Triggers AttributeError: 'frozenset' object has no attribute 'pop'
+
+# adding an item
+S = frozenset({'red', 'green', 'blue'})
+S.add('yellow')
+# Triggers AttributeError: 'frozenset' object has no attribute 'add'
+
+Unlike sets, frozensets are unchangeable so they can be used as keys to a dictionary.
+
+For example, D = {frozenset(['dev','mgr']):'Bob'}
 
 ```
