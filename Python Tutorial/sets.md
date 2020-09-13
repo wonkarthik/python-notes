@@ -65,7 +65,7 @@ print(S)
 ```
 numbers={3,2,1,4,6,5}
 
-1. discard() : This method takes the item to delete as an argument.
+1. `discard()` : This method takes the item to delete as an argument.
 
 numbers.discard(3)
 print(numbers)
@@ -73,7 +73,7 @@ print(numbers)
 
 As you can see in the resulting set, the item 3 has been removed.
 
-2. remove()
+2. `remove()`
 
 Like the discard() method, remove() deletes an item from the set.
 
@@ -96,7 +96,7 @@ File “<pyshell#37>”, line 1, in <module>
 numbers.remove(7)
 KeyError: 7
 
-3. pop()
+3. `pop()`
 
 Like on a dictionary, you can call the pop() method on a set. However, here, it does not take an argument. Because a set doesn’t support indexing, there is absolutely no way to pass an index to the pop method. Hence, it pops out an arbitrary item. Furthermore, it prints out the item that was popped.
 
@@ -111,7 +111,7 @@ Let’s try it on another set as well.
 {2,1,3}.pop()
 1
 
-4. clear()
+4. `clear()`
 
 Like the pop method(), the clear() method for a dictionary can be applied to a Python set as well. It empties the set in Python.
 
@@ -133,12 +133,12 @@ So, we use two methods for this purpose- add() and update(). We have seen the up
 ```
 numbers={3,1,2,4,6,5}
 
-1 . add() If you add an existing item in the set, the set remains unaffected.
+1 . `add() ` If you add an existing item in the set, the set remains unaffected.
 
 print(numbers.add(3.5))
 {1, 2, 3, 4, 5, 6, 3.5}
 
-2. update() This method can add multiple items to the set at once, which it takes as arguments.
+2. `update() ` This method can add multiple items to the set at once, which it takes as arguments.
 
 print(numbers.update([7,8],{1,2,9}))
 {1, 2, 3, 4, 5, 6, 3.5, 7, 8, 9}
