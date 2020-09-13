@@ -178,7 +178,7 @@ B = {4, 5, 6, 7, 8}
 
 #### Set Union
 Union of A and B is a set of all elements from both sets.You can perform union on two or more sets using union() method or  |  operator.
-image: ![](./images/union.PNG)
+![](./images/union.PNG)
 
 ```python
 # by operator
@@ -190,7 +190,8 @@ print(A.union(B))                    # {1, 2, 3, 4, 5, 6, 7, 8}
 #### Set Intersection
 Intersection of A and B is a set of elements that are common in both the sets.
 Intersection is performed using & operator. Same can be accomplished using the intersection() method.
-image: ![](./images/intersection.PNG)
+![](./images/intersection.PNG)
+
 ```python
 # by operator
 print(A & B)                         # {4, 5}
@@ -203,7 +204,8 @@ B - A is a set of elements in B but not in A.
 
 Difference is performed using - operator. Same can be accomplished using the difference() method
 
-image: ![](./images/difference.PNG)
+![](./images/difference.PNG)
+
 ```python
 # by operator
 print(A - B)                         # {1, 2, 3}
@@ -214,7 +216,8 @@ print(A.difference(B))               # {1, 2, 3}
 Symmetric Difference of A and B is a set of elements in A and B but not in both (excluding the intersection).
 Symmetric difference is performed using ^ operator. Same can be accomplished using the method symmetric_difference().
 
-image: ![](./images/assymetricdifference.PNG)
+![](./images/assymetricdifference.PNG)
+
 ```python
 # by operator
 print(A ^ B)                         # {1, 2, 3, 6, 7, 8}   
