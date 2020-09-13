@@ -62,7 +62,7 @@ print(S)
 ```
 ## Deleting a set 
 
-```
+```shell
 numbers={3,2,1,4,6,5}
 
 1. `discard()` : This method takes the item to delete as an argument.
@@ -81,9 +81,10 @@ numbers.remove(5)
 print(numbers)
 {1, 2, 4, 6}
 
-discard() vs remove()-
+`discard() vs remove()`-
 
-These two methods may appear the same to you, but there’s actually a difference. If you try deleting an item that doesn’t exist in the set, discard() ignores it, but remove() raises a KeyError.
+These two methods may appear the same to you, but there’s actually a difference. If you try deleting an item that 
+doesn’t exist in the set, discard() ignores it, but remove() raises a KeyError.
 
 numbers.discard(7)
 print(numbers)
@@ -98,7 +99,8 @@ KeyError: 7
 
 3. `pop()`
 
-Like on a dictionary, you can call the pop() method on a set. However, here, it does not take an argument. Because a set doesn’t support indexing, there is absolutely no way to pass an index to the pop method. Hence, it pops out an arbitrary item. Furthermore, it prints out the item that was popped.
+Like on a dictionary, you can call the pop() method on a set. However, here, it does not take an argument. Because a set 
+doesn’t support indexing, there is absolutely no way to pass an index to the pop method. Hence, it pops out an arbitrary item. Furthermore, it prints out the item that was popped.
 
 numbers.pop()
 1
@@ -113,11 +115,14 @@ Let’s try it on another set as well.
 
 4. `clear()`
 
-Like the pop method(), the clear() method for a dictionary can be applied to a Python set as well. It empties the set in Python.
+Like the pop method(), the clear() method for a dictionary can be applied to a Python set as well. It empties the 
+set in Python.
 
 print(numbers.clear())
 
 ```
+
+```python
 ## Updating a set
 Python set is mutable. But as we have seen earlier, we can’t use indices to reassign it.
 
@@ -131,14 +136,16 @@ TypeError: ‘set’ object does not support indexing
 So, we use two methods for this purpose- add() and update(). We have seen the update() method on tuples, lists, and strings.
 
 ```
+
+```javascript
 numbers={3,1,2,4,6,5}
 
-1 . `add() ` If you add an existing item in the set, the set remains unaffected.
+1 . add()  If you add an existing item in the set, the set remains unaffected.
 
 print(numbers.add(3.5))
 {1, 2, 3, 4, 5, 6, 3.5}
 
-2. `update() ` This method can add multiple items to the set at once, which it takes as arguments.
+2. update() This method can add multiple items to the set at once, which it takes as arguments.
 
 print(numbers.update([7,8],{1,2,9}))
 {1, 2, 3, 4, 5, 6, 3.5, 7, 8, 9}
