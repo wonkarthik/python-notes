@@ -210,7 +210,7 @@ print(A - B)                         # {1, 2, 3}
 # by method
 print(A.difference(B))               # {1, 2, 3}
 ```
-#### Symmetric Difference :
+#### Set Symmetric Difference :
 Symmetric Difference of A and B is a set of elements in A and B but not in both (excluding the intersection).
 Symmetric difference is performed using ^ operator. Same can be accomplished using the method symmetric_difference().
 
@@ -224,18 +224,13 @@ print(A.symmetric_difference(B))     # {1, 2, 3, 6, 7, 8}
 
 ```
 
-#### Set intersection_update()
+#### Set intersection_update
 
 The intersection of two or more sets is the set of elements which are common to all sets.
 
-A.intersection_update(*other_sets)
-
 This method returns None (meaning it does not have a return value). It only updates the set calling the intersection_update() method.
 
-For example:
-
 result = A.intersection_update(B, C)
-
 result will be None
 A will be equal to the intersection of A, B, and C
 B remains unchanged
@@ -260,7 +255,7 @@ print('C =', C)                     # C = {4}
 print('B =', B)                     # B = {2, 3, 4, 5, 6}
 print('A =', A)                     # A = {1, 2, 3, 4}
 ```
-#### Set difference_update()
+#### Set difference_update
 
 If A and B are two sets. The set difference of A and B is a set of elements that exists only in set A but not in B
 ```python
@@ -282,7 +277,7 @@ print('B =',B)                              # B = {2, 3, 4, 5, 6}
 print('C =',C)                              # C = {9, 10}
 ```
 
-#### Set symmetric_difference_update()
+#### Set symmetric_difference_update
 The symmetric difference of two sets A and B is the set of elements that are in either A or B, but not in their intersection.
 ```python
 A = {1, 2, 3, 4}
@@ -304,7 +299,7 @@ print('C =',C)                              # C = {9, 10}
 
 "Note :" Multiple argument are not possible
 ```
-#### isdisjoint()	
+#### Set isdisjoint	
 Two sets are said to be disjoint sets if they have no common elements.
 ```python
 A = {1, 5, 9, 0}
@@ -330,7 +325,7 @@ print('Are A and D disjoint?', A.isdisjoint(D))   # Are A and D disjoint? True
 print('Are A and E disjoint?', A.isdisjoint(E))   # Are A and E disjoint? False
 
 ```
-#### issubset()	
+#### Set issubset
 Determines whether one set is a subset of the other
 
 Set A is said to be the subset of set B if all elements of A are in B
@@ -351,7 +346,7 @@ print(A.issubset(C))                # Returns False
 print(C.issubset(B))                # Returns True
 
 ```
-#### issuperset
+#### Set issuperset
 Determines whether one set is a superset of the other
 
 Set X is said to be the superset of set Y if all elements of Y are in X
@@ -374,7 +369,7 @@ f1 = x.issuperset(y) # f1 = True
 f2 = y.issuperset(x) # f2 = False
 
 ```
-## Python Frozenset
+## Python Frozenset 
 Python provides another built-in type called a frozenset. Frozenset is just like set, only immutable (unchangeable).
 
 You can create a frozenset using frozenset() method. It freezes the given sequence and makes it unchangeable.
@@ -410,5 +405,88 @@ S.add('yellow')
 Unlike sets, frozensets are unchangeable so they can be used as keys to a dictionary.
 
 For example, D = {frozenset(['dev','mgr']):'Bob'}
+
+```
+## updating a set
+Sets are mutable. However, since they are unordered, indexing has no meaning.
+
+We cannot access or change an element of a set using indexing or slicing. Set data type does not support it.
+We can add a single element using the add() method, and multiple elements using the update() method. The update() method can take tuples, lists, strings or other sets as its argument. In all cases, duplicates are avoided.
+
+```python
+You can add a single item to a set using add() method.
+
+S = {'red', 'green', 'blue'}
+S.add('yellow')
+print(S)
+# Prints {'blue', 'green', 'yellow', 'red'}
+
+You can add multiple items to a set using update() method.
+
+S = {'red', 'green', 'blue'}
+S.update(['yellow', 'orange'])
+print(S)
+# Prints {'blue', 'orange', 'green', 'yellow', 'red'}
+
+## example 2
+data = {1, 3}
+print(data)                       # {1, 3}
+
+data.add(2)
+print(data)                       # {1, 2, 3}
+
+data.update([2, 5, 3, 4])
+print(data)                       # {1, 2, 3, 4, 5}
+
+data.update([7, 5], {1, 6, 8})
+print(data)                       # {1, 2, 3, 4, 5, 6, 7, 8}
+```
+## functions in a set
+
+Python also has a set of built-in functions that you can use with set objects.
+
+|Method	        |Description                                                 |
+|---------------|------------------------------------------------------------|
+|all()	        | Returns True if all set items are true                     |
+|any()	        | Returns True if any set item is true                       |
+|enumerate()	| Takes a set and returns an enumerate object                |
+|len()	        | Returns the number of items in the set                     |
+|set()	        | Converts an iterable (set, string, set etc.) to a set      |
+|max()	        | Returns the largest item of the set                        |
+|min()	        | Returns the smallest item of the set                       |
+|sorted()	    | Returns a sorted set                                       |
+|sum()	        | Sums items of the set                                      |
+
+```python
+set = {0,1,2,3,4,5,6,5}
+
+print(len(set))                  # 8
+print(max(set))                  # 6
+print(min(set))                  # 0
+print(sum(set))                  # 26
+print(sorted(set))               # [0, 1, 2, 3, 4, 5, 5, 6]
+# print(set("Hockey"))           # error "Hockey" string not found
+print(any(['','','']))           # False
+print(any(['','0','0','','']))   # True
+# It returns True if all items in the set have a True value
+print(all(['','','']))           # False
+print(all(['1','2','1']))        # True
+print(enumerate(set))            # <enumerate object at 0x00000156AF41E840>
+```
+## iterating Tuples
+
+We can use a for loop to iterate through each item in a tuple
+```python
+for i in (1,3,2):
+    print(i)            # (1,3,2)
+
+We can use a for loop to iterate through each item in a tuple.
+
+# Using a for loop to iterate through a tuple
+for name in ('John', 'Kate'):
+    print("Hello", name)  
+
+Hello John
+Hello Kate    
 
 ```
