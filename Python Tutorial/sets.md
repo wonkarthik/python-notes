@@ -19,12 +19,11 @@ Python set is an unordered collection of unique items. They are commonly used fo
 1. Creating a set
 2. Accessing a set
 3. Deleting a set
-4. Operation on sets
+4. Methods on sets
 5. The Frozenset
 6. Updating a set
 7. Functions on sets
-8. Methods on sets
-9. iterating on sets
+8. iterating on sets
 ```
 
 
@@ -153,7 +152,7 @@ print(numbers.update([7,8],{1,2,9}))
 
 ```
 
-## set operations
+## Methods on Sets
 
 |Method	                            |Description                                                                |
 |-----------------------------------|---------------------------------------------------------------------------|
@@ -473,7 +472,7 @@ print(all(['','','']))           # False
 print(all(['1','2','1']))        # True
 print(enumerate(set))            # <enumerate object at 0x00000156AF41E840>
 ```
-## iterating Tuples
+## Iterating on sets
 
 We can use a for loop to iterate through each item in a tuple
 ```python
