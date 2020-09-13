@@ -172,48 +172,50 @@ print(numbers.update([7,8],{1,2,9}))
 |issubset()	                        | Determines whether one set is a subset of the other                       |
 |issuperset()	                    | Determines whether one set is a superset of the other                     |
 
-``` javascript
+
 A = {1, 2, 3, 4, 5}
 B = {4, 5, 6, 7, 8}
 
-Set Union
+#### Set Union
 Union of A and B is a set of all elements from both sets.You can perform union on two or more sets using union() method or  |  operator.
 image: ![](./images/union.PNG)
 
+```python
 # by operator
 print(A | B)                         # {1, 2, 3, 4, 5, 6, 7, 8}
 # by method
 print(A.union(B))                    # {1, 2, 3, 4, 5, 6, 7, 8}
+```
 
-
-Set Intersection
+#### Set Intersection
 Intersection of A and B is a set of elements that are common in both the sets.
 Intersection is performed using & operator. Same can be accomplished using the intersection() method.
 image: ![](./images/intersection.PNG)
-
+```python
 # by operator
 print(A & B)                         # {4, 5}
 # by method
 print(A.intersection(B))             # {4, 5}
-
-Set Difference
+```
+#### Set Difference
 Difference of the set B from set A(A - B) is a set of elements that are only in A but not in B. Similarly, 
 B - A is a set of elements in B but not in A.
 
 Difference is performed using - operator. Same can be accomplished using the difference() method
-image: ![](./images/difference.PNG)
 
+image: ![](./images/difference.PNG)
+```python
 # by operator
 print(A - B)                         # {1, 2, 3}
 # by method
 print(A.difference(B))               # {1, 2, 3}
-
-Symmetric Difference
+```
+#### Symmetric Difference :
 Symmetric Difference of A and B is a set of elements in A and B but not in both (excluding the intersection).
 Symmetric difference is performed using ^ operator. Same can be accomplished using the method symmetric_difference().
 
 image: ![](./images/assymetricdifference.PNG)
-
+```python
 # by operator
 print(A ^ B)                         # {1, 2, 3, 6, 7, 8}   
 # by method  
