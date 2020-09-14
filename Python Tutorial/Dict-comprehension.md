@@ -96,8 +96,7 @@ A dictionary comprehension may have an optional associated if clause to filter i
 
 Iterable’s items are skipped for which the if clause is not true.
 ```tip
-Python Dictionary Comprehension If Clause Syntax
-        {key:value for var in iterable if_clause}
+        { key:value for var in iterable if_clause }
 ```
 The following example collects squares of even items (i.e. items having no remainder for division by 2) in a range.
 ```python
@@ -118,8 +117,7 @@ print(D)                         # Prints {0: 0, 2: 4, 4: 16}
 #### Nested Dictionary Comprehension
 The initial value in a dictionary comprehension can be any expression, including another dictionary comprehension.
 ```tip
-Python Nested Dictionary Comprehension Syntax:
-        {key:{dict comprehension} for var in iterable}
+        { key: {dict comprehension} for var in iterable } 
 ```
 For example, here’s a simple list comprehension that uses a nested for clause.
 ```python
