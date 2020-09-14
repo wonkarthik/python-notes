@@ -208,6 +208,28 @@ print(D)                # Prints {}
 ```
 ## In-Built function on a Dictionary
 
+Built-in functions like all(), any(), len(), cmp(), sorted(), etc. are commonly used with dictionaries to perform different tasks.
+
+|Function       | Description                                                                                   |
+|---------------|-----------------------------------------------------------------------------------------------|
+|all()	        | Return True if all keys of the dictionary are True (or if the dictionary is empty).           |
+|any()	        | Return True if any key of the dictionary is true. If the dictionary is empty, return False.   |
+|len()	        | Return the length (the number of items) in the dictionary.                                    |
+|cmp()	        | Compares items of two dictionaries. (Not available in Python 3)                               |
+|sorted()	    | Return a new sorted list of keys in the dictionary.                                           |
+
+```python
+# Dictionary Built-in Functions
+squares = {0: 0, 1: 1, 3: 9, 5: 25, 7: 49, 9: 81}
+
+print(all(squares))         # False
+
+print(any(squares))         # True
+
+print(len(squares))         # 6
+
+print(sorted(squares))      # [0, 1, 3, 5, 7, 9]
+```
 ## In-Built Methods on a Dictionary
 
 |Method	                   | Description                                                                                             |
@@ -225,6 +247,29 @@ print(D)                # Prints {}
 |                          | of d and returns d (defaults to None).                                                                  |
 |update([other])	       | Updates the dictionary with the key/value pairs from other, overwriting existing keys.                  |
 |values()	               | Returns a new object of the dictionary's values                                                         |
+
+
+data = {0: 0, 1: 1, 2: 4, 3: 9, 4: 16, 5: 25}
+print((data))
+print(data.keys())          # dict_keys([0, 1, 2, 3, 4, 5])
+print(data.values())        # dict_values([0, 1, 4, 9, 16, 25])
+print(data.items())         # dict_items([(0, 0), (1, 1), (2, 4), (3, 9), (4, 16), (5, 25)])
+print(data.get(3,0))        # it will give the value of key 3 = 9
+                            # if there is no key it return `none`
+print(data.clear())         # it clears the dictionary
+data1=data.copy()           # 
+print(data1)                # {0: 0, 1: 1, 2: 4, 3: 9, 4: 16, 5: 25}
+print(data1.pop(4))         # used to remove and display an item from the dictionary 16
+                            # this has no default None value for the second parameter it throw keyerror
+print(data1.popitem())      # last inserted item in dictionary (5,25)
+print(data.fromkeys({1,2,3,4,7},0)) # {1: 0, 2: 0, 3: 0, 4: 0, 7: 0}
+print(data.fromkeys({'1','2','3','4','7'}))  # {'2': None, '4': None, '3': None, '7': None, '1': None}
+dict1={1:1,2:2}
+dict2={4:5,5:2}
+dict1.update(dict2)         # Then it updates the dictionary to hold values from the 
+                            # other dictionary that it doesn’t already.
+print(dict1)                # {1: 1, 2: 2, 4: 5, 5: 2} 
+
 
 ## Operations on a Dictionary
 
