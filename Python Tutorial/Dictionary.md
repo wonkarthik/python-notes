@@ -425,8 +425,9 @@ Here the ’emp2′ record is updated while ’emp3′ is added to the dictionar
 #### Remove Nested Dictionary Items
 There are several ways to remove items from a nested dictionary.
 
-1. Remove an Item by Key
+(I) . Remove an Item by Key
 If you know the key of the item you want, you can use `pop()` method. It removes the key and returns its value.
+
 ```python
 D = {'emp1': {'name': 'Bob', 'job': 'Mgr'},
      'emp2': {'name': 'Kim', 'job': 'Dev'},
@@ -442,7 +443,9 @@ print(D)
 print(x)
 # Prints {'name': 'Sam', 'job': 'Dev'}
 ```
-2. If you don’t need the removed value, use the del statement.
+
+(II). If you don’t need the removed value, use the del statement.
+
 ```python
 D = {'emp1': {'name': 'Bob', 'job': 'Mgr'},
      'emp2': {'name': 'Kim', 'job': 'Dev'},
@@ -454,8 +457,10 @@ print(D)
 # Prints {'emp1': {'name': 'Bob', 'job': 'Mgr'},
 #         'emp2': {'name': 'Kim', 'job': 'Dev'}}
 ```
-3. Remove Last Inserted Item
+
+(III). Remove Last Inserted Item
 The `popitem()` method removes and returns the last inserted item as a tuple.
+
 ```python
 D = {'emp1': {'name': 'Bob', 'job': 'Mgr'},
      'emp2': {'name': 'Kim', 'job': 'Dev'},
@@ -471,9 +476,10 @@ print(D)
 print(x)
 # Prints ('emp3', {'name': 'Sam', 'job': 'Dev'})
 ```
+
 In versions before 3.7, `popitem()` would remove a random item.
 
-3. Iterate Through a Nested Dictionary
+Iterate Through a Nested Dictionary
 we can iterate over all values in a nested dictionary using nested for loop.
 
 ```python
