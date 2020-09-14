@@ -248,7 +248,7 @@ print(sorted(squares))      # [0, 1, 3, 5, 7, 9]
 |update([other])	       | Updates the dictionary with the key/value pairs from other, overwriting existing keys.                  |
 |values()	               | Returns a new object of the dictionary's values                                                         |
 
-
+```python
 data = {0: 0, 1: 1, 2: 4, 3: 9, 4: 16, 5: 25}
 print((data))
 print(data.keys())          # dict_keys([0, 1, 2, 3, 4, 5])
@@ -270,7 +270,7 @@ dict1.update(dict2)         # Then it updates the dictionary to hold values from
                             # other dictionary that it doesn’t already.
 print(dict1)                # {1: 1, 2: 2, 4: 5, 5: 2} 
 
-
+```
 ## Operations on a Dictionary
 
 ## iterating on a Dictionary
