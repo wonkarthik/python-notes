@@ -240,7 +240,8 @@ print(S)
 |endswith()	    |Python string endswith() function returns True if the string ends with the given suffix, otherwise it returns False.           |
 |capitalize()	|Python String capitalize() function returns the capitalized version of the string.                                             |
 |center()	    |Python string center() function returns a centered string of specified size.                                                   |
-|casefold()	    |Python string casefold() function returns a casefolded copy of the string. This function is used to perform case-insensitive   | |               | string comparison.                                                                                                            |
+|casefold()	    |Python string casefold() function returns a casefolded copy of the string. This function is used to perform case-insensitive   | |               |string comparison.                                                                                                             |
 |expandtabs()	|Python string expandtabs() function returns a new string with tab characters (\t) replaced with one or more whitespaces.       |
 |index()	    |Python String index() function returns the lowest index where the specified substring is found.                                |
-|__contains__()	|Python String class has __contains__() function that we can use to check if it contains another string or not. We can also use | |               |“in” operator to perform this check.                                                                                           |
+| __contains__()|Python String class has __contains__() function that we can use to check if it contains another string or not. We can also use | |               | “in” operator to perform this check.                                                                                          |
+
