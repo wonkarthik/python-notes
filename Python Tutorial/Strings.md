@@ -180,12 +180,14 @@ print(S.title())
 ```
 #### Check if Substring Contains in a String
 To check if a specific text is present in a string, use in operator. The in is a boolean operator, which takes two strings and returns True if the first appears as a substring in the second:
+
 ```python
 S = 'Hello, World!'
 print('Hello' in S)
 # Prints True
 ```
 To search for a specific text within a string, use find() method. It returns the lowest index in the string where substring is found.
+
 ```python
 # Search for 'Foolish' within a string
 S = 'Stay Hungry, Stay Foolish'
@@ -228,3 +230,17 @@ print(S)
 # First line.
 #     Second line.
 ```
+#### String Methods
+
+|Function	    |Description                                                                                                                    |
+|---------------|-------------------------------------------------------------------------------------------------------------------------------|
+|encode()	    |Python string encode() function is used to encode the string using the provided encoding.                                      |
+|count()	    |Python String count() function returns the number of occurrences of a substring in the given string.                           |
+|startswith()	|Python string startswith() function returns True if the string starts with the given prefix, otherwise it returns False.       |
+|endswith()	    |Python string endswith() function returns True if the string ends with the given suffix, otherwise it returns False.           |
+|capitalize()	|Python String capitalize() function returns the capitalized version of the string.                                             |
+|center()	    |Python string center() function returns a centered string of specified size.                                                   |
+|casefold()	    |Python string casefold() function returns a casefolded copy of the string. This function is used to perform case-insensitive   | |               | string comparison.                                                                                                            |
+|expandtabs()	|Python string expandtabs() function returns a new string with tab characters (\t) replaced with one or more whitespaces.       |
+|index()	    |Python String index() function returns the lowest index where the specified substring is found.                                |
+|__contains__()	|Python String class has __contains__() function that we can use to check if it contains another string or not. We can also use | |               |“in” operator to perform this check.                                                                                           |
