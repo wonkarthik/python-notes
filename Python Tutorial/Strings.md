@@ -246,9 +246,9 @@ print(S)
 | __contains__()|Python String class has __contains__() function that we can use to check if it contains another string or not. We can also use | |               | “in” operator to perform this check.                                                                                          |
 
 
-##### Built-in String Functions in Python
+**  Built-in String Functions in Python
 
-`Conversion Functions`
+##### `Conversion Functions`
 
 1. capitalize() – Returns the string with the first character capitalized and rest of the characters in lower case.
 ```python
@@ -256,12 +256,14 @@ var = 'PYTHON'
 print (var.capitalize())
 # Python
 ```
+
 2. lower() – Converts all the characters of the String to lowercase
+
 ```python
 var = 'FootBall'
 print (var.lower())
 # football
-```l
+```
 3. upper() – Converts all the characters of the String to uppercase
 ```python
 var = 'FootBall'
@@ -293,8 +295,11 @@ var2='Eagle Eyes'
 print (var2.count('E',0,5))
 # 1
 ```
-`Comparison Functions – Part1`
+
+###### `Comparison Functions – Part1`
+
 1. islower() – Returns ‘True’ if all the characters in the String are in lowercase. If any of the char is in uppercase, it will return False.
+
 ```python
 var='Python'
 print (var.islower())
@@ -305,6 +310,7 @@ print (var.islower())
 # True
 ```
 2. isupper() – Returns ‘True’ if all the characters in the String are in uppercase. If any of the char is in lowercase, it will return False.
+
 ```python
 var='Python'
 print (var.isupper())
@@ -314,17 +320,21 @@ var='PYTHON'
 print (var.isupper())
 # True
 ```
+
 3. isdecimal() – Returns ‘True’ if all the characters in String are decimal. If any character in the String is of other data-type, it will return False.Decimal characters are those from the Unicode category Nd.
+
 ```python
 num=u'2016'
 print (num.isdecimal())
 # True
 ```
+
 4. isdigit() – Returns ‘True’ for any char for which isdecimal() would return ‘True and some characters in the ‘No’ category. If there are any characters other than these, it will return False’.
 
 Precisely, digits are the characters for which Unicode property includes: Numeric_Type=Digit or Numeric_Type=Decimal.
 
 For example, superscripts are digits, but fractions not.
+
 ```python
 print ('2'.isdigit())
 # True
@@ -332,12 +342,15 @@ print ('2'.isdigit())
 print ('²'.isdigit())
 # True
 ```
-`Comparison Functions – II`
+
+##### `Comparison Functions – II`
+
 1. isnumeric() – Returns ‘True’ if all the characters of the Unicode String lie in any one of the categories Nd, No, and NI.
 
 If there are any characters other than these, it will return False.
 
 Precisely, Numeric characters are those for which Unicode property includes: Numeric_Type=Digit, Numeric_Type=Decimal or Numeric_Type=Numeric.
+
 ```python
 num=u'2016'
 print (num.isnumeric())
@@ -347,7 +360,9 @@ num=u'year2016'
 print (num.isnumeric())
 # False
 ```
+
 2. isalpha() – Returns ‘True’ if String contains at least one character (non-empty String), and all the characters are alphabetic, ‘False’ otherwise.
+
 ```python
 print ('python'.isalpha())
 # True
@@ -355,17 +370,21 @@ print ('python'.isalpha())
 print ('python3'.isalpha())
 # False
 ```
+
 3. isalnum() – Returns ‘True’ if String contains at least one character (non-empty String), and all the characters are either alphabetic or decimal digits, ‘False’ otherwise.
+
 ```python
 print ('python'.isalnum())
 # True
 print ('python3'.isalnum())
 # True
 ```
-`Padding Functions`
+##### `Padding Functions`
+
 1. rjust(width[,fillchar]) – Returns string filled with input char while pushing the original content on the right side.
 
 By default, the padding uses a space. Otherwise, ‘fillchar’ specifies the filler character.
+
 ```python
 var='Python'
 print (var.rjust(10))
@@ -374,9 +393,11 @@ print (var.rjust(10))
 print (var.rjust(10,'-'))
 # ----Python
 ```
+
 2. ljust(width[,fillchar]) – Returns a padded version of String with the original String left-justified to a total of width columns
 
 By default, the padding uses a space. Otherwise, ‘fillchar’ specifies the filler character.
+
 ```python
 var='Python'
 print (var.ljust(10))
@@ -385,9 +406,11 @@ print (var.ljust(10))
 print (var.ljust(10,'-'))
 # Python----
 ```
+
 3. center(width[,fillchar]) – Returns string filled with the input char while pushing the original content into the center.
 
 By default, the padding uses a space. Otherwise, ‘fillchar’ specifies the filler character.
+
 ```python
 var='Python'
 print (var.center(20))
@@ -396,9 +419,11 @@ print (var.center(20))
 print (var.center(20,'*'))
 # *******Python*******
 ```
+
 4. zfill(width) – Returns string filled with the original content padded on the left with zeros so that the total length of String becomes equal to the input size.
 
 If there is a leading sign (+/-) present in the String, then with this function, padding starts after the symbol, not before it.
+
 ```python
 var='Python'
 print (var.zfill(10))
@@ -408,11 +433,13 @@ var='+Python'
 print (var.zfill(10))
 # +000Python
 ```
-`Search Functions`
+##### `Search Functions`
+
 1. find(str [,i [,j]]) – Searches for ‘str’ in complete String (if i and j not defined) or in a sub-string of String (if i and j are defined).This function returns the index if ‘str’ is found else returns ‘-1’.
 
 Here, i=search starts from this index, j=search ends at this index.
 See more details – Python String Find()
+
 ```python
 var="High sky"
 str="sky"
@@ -429,7 +456,9 @@ str="sky"
 print (var.find(str,7))
 # -1
 ```
+
 2. index(str[,i [,j]]) – This is same as ‘find’ method. The only difference is that it raises the ‘ValueError’ exception if ‘str’ doesn’t exist.
+
 ```python
 var='High Sky'
 str='sky'
@@ -446,7 +475,9 @@ str='sky'
 print (var.index(str,7))
 # ValueError: substring not found
 ```
+
 3. rfind(str[,i [,j]]) – This is same as find() just that this function returns the last index where ‘str’ is found. If ‘str’ is not found, it returns ‘-1’.
+
 ```python
 var='This is a good example'
 str='is'
@@ -456,9 +487,11 @@ print (var.rfind(str,0,10))
 print (var.rfind(str,10))
 # -1
 ```
+
 4. count(str[,i [,j]]) – Returns the number of occurrences of substring ‘str’ in the String. Searches for ‘str’ in the complete String (if i and j not defined) or in a sub-string of String (if i and j are defined).
 
 Where: i=search starts from this index, j=search ends at this index.
+
 ```python
 var='This is a good example'
 str='is'
@@ -469,12 +502,14 @@ print (var.count(str,4,10))
 # 1
 ```
 
-`String Substitution Functions`
+##### `String Substitution Functions`
+
 1. replace(old,new[,count]) – Replaces all the occurrences of substring ‘old’ with ‘new’ in the String.
 
 If the count is available, then only ‘count’ number of occurrences of ‘old’ will be replaced with the ‘new’ var.
 
 Where old =substring to replace, new =substring
+
 ```python
 var='This is a good example'
 str='was'
@@ -482,15 +517,18 @@ print (var.replace('is',str))
 # Thwas was a good exampleprint (var.replace('is',str,1))
 # Thwas is a good example
 ```
+
 2. split([sep[,maxsplit]]) – Returns a list of substring obtained after splitting the String with ‘sep’ as a delimiter.
 
 Where, sep= delimiter, the default is space, maxsplit= number of splits to be done
+
 ```python
 var = "This is a good example"
 print (var.split())
 # ['This', 'is', 'a', 'good', 'example']print (var.split(' ', 3))
 # ['This', 'is', 'a', 'good example']
 ```
+
 3. splitlines(num) – Splits the String at line breaks and returns the list after removing the line breaks.
 
 Where num = if this is a positive value. It indicates that line breaks will appear in the returned list.
@@ -500,9 +538,11 @@ print (var.splitlines())
 # ['Print new line', 'Nextline', '', 'Move again to new line']print (var.splitlines(1))
 # ['Print new line\n', 'Nextline\n', '\n', 'Move again to new line']
 ```
+
 4. join(seq) – Returns a String obtained after concatenating the sequence ‘seq’ with a delimiter string.
 
 Where: the seq= sequence of elements to join
+
 ```python
 seq=('ab','bc','cd')
 str='='
@@ -510,12 +550,13 @@ print (str.join(seq))
 # ab=bc=cd
 ```
 
-`Misc String Functions`
+##### `Misc String Functions`
 1. lstrip([chars]) – Returns a string after removing the characters from the beginning of the String.
 
 Where: Chars=this is the character to be trimmed from the String.
 
 The default is whitespace character.
+
 ```python
 var=' This is a good example '
 print (var.lstrip())
@@ -524,9 +565,11 @@ var='*****This is a good example*****'
 print (var.lstrip('*'))
 # This is a good example**********
 ```
+
 2. rstrip() – Returns a string after removing the characters from the End of the String.
 
 Where: Chars=this is the character to be trimmed from the String. The default is whitespace character.
+
 ```python
 var=' This is a good example '
 print (var.rstrip())
@@ -535,11 +578,13 @@ var='*****This is a good example*****'
 print (var.lstrip('*'))
 # *****This is a good example
 ```
+
 3. rindex(str[,i [,j]]) – Searches for ‘str’ in the complete String (if i and j not defined) or in a sub-string of String (if i and j are defined). This function returns the last index where ‘str’ is available.
 
 If ‘str’ is not there, then it raises a ValueError exception.
 
 Where: i=search starts from this index, j=search ends at this index.
+
 ```python
 var='This is a good example'
 str='is'
@@ -549,6 +594,7 @@ print (var.rindex(str,10))
 # ValueError: substring not found
 ```
 4. len(string) – Returns the length of given String
+
 ```python
 var='This is a good example'
 print (len(var))
