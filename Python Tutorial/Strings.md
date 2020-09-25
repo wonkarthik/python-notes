@@ -246,7 +246,6 @@ print(S)
 | __contains__()|Python String class has __contains__() function that we can use to check if it contains another string or not. We can also use | |               | “in” operator to perform this check.                                                                                          |
 
 
-#### Built-in String Functions in Python
 
 ##### Conversion Functions
 
@@ -305,7 +304,7 @@ print (var2.count('E',0,5))
 # 1
 ```
 
-###### Comparison Functions – Part1
+##### Comparison Functions – Part1
 
 `islower()` – Returns ‘True’ if all the characters in the String are in lowercase. If any of the char is in uppercase, it will return False.
 
