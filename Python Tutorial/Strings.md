@@ -246,9 +246,9 @@ print(S)
 | __contains__()|Python String class has __contains__() function that we can use to check if it contains another string or not. We can also use | |               | “in” operator to perform this check.                                                                                          |
 
 
-**  Built-in String Functions in Python
+#### Built-in String Functions in Python
 
-##### `Conversion Functions`
+##### Conversion Functions
 
 1. capitalize() – Returns the string with the first character capitalized and rest of the characters in lower case.
 ```python
@@ -264,25 +264,34 @@ var = 'FootBall'
 print (var.lower())
 # football
 ```
+
 3. upper() – Converts all the characters of the String to uppercase
+
 ```python
 var = 'FootBall'
 print (var.upper())
 # FOOTBALL
 ```
+
 4. swapcase() – Swaps the case of every character in the String means that lowercase characters got converted to uppercase and vice-versa.
+
 ```python
 var = 'FootBall'
 print (var.swapcase())
 # fOOTbALL
 ```
+
 5. title() – Returns the ‘titlecased’ version of String, which means that all words start with uppercase and the rest of the characters in words are in lowercase.
+
 ```python
 var = 'welcome to Python programming'
 print (var.title())
 # Welcome To Python Programming
 ```
-6. `count( str[, beg [, end]])` – Returns the number of times substring ‘str’ occurs in the range [beg, end] if beg and end index are given else the search continues in full String Search is case-sensitive.
+
+6. `count( str[, beg [, end]])` – Returns the number of times substring ‘str’ occurs in 
+the range [beg, end] if beg and end index are given else the search continues in full String Search is case-sensitive.
+
 ```python
 var='Television'
 str='e'
@@ -296,9 +305,9 @@ print (var2.count('E',0,5))
 # 1
 ```
 
-###### `Comparison Functions – Part1`
+###### Comparison Functions – Part1
 
-1. islower() – Returns ‘True’ if all the characters in the String are in lowercase. If any of the char is in uppercase, it will return False.
+1. `islower()` – Returns ‘True’ if all the characters in the String are in lowercase. If any of the char is in uppercase, it will return False.
 
 ```python
 var='Python'
@@ -309,7 +318,8 @@ var='python'
 print (var.islower())
 # True
 ```
-2. isupper() – Returns ‘True’ if all the characters in the String are in uppercase. If any of the char is in lowercase, it will return False.
+
+2. `isupper()` – Returns ‘True’ if all the characters in the String are in uppercase. If any of the char is in lowercase, it will return False.
 
 ```python
 var='Python'
@@ -321,7 +331,7 @@ print (var.isupper())
 # True
 ```
 
-3. isdecimal() – Returns ‘True’ if all the characters in String are decimal. If any character in the String is of other data-type, it will return False.Decimal characters are those from the Unicode category Nd.
+3. `isdecimal()` – Returns ‘True’ if all the characters in String are decimal. If any character in the String is of other data-type, it will return False.Decimal characters are those from the Unicode category Nd.
 
 ```python
 num=u'2016'
@@ -329,7 +339,7 @@ print (num.isdecimal())
 # True
 ```
 
-4. isdigit() – Returns ‘True’ for any char for which isdecimal() would return ‘True and some characters in the ‘No’ category. If there are any characters other than these, it will return False’.
+4. `isdigit()` – Returns ‘True’ for any char for which isdecimal() would return ‘True and some characters in the ‘No’ category. If there are any characters other than these, it will return False’.
 
 Precisely, digits are the characters for which Unicode property includes: Numeric_Type=Digit or Numeric_Type=Decimal.
 
