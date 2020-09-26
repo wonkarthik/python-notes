@@ -175,3 +175,52 @@ n = int(input("Enter the value of number: "))
 print(sumofcubes(n)) 
 
 ```
+#### Sum of squares of natural numbers
+
+```python
+# Method 1
+# Return the sum of  square of first n  natural numbers 
+def squaresum(n) : 
+	# Iterate i from 1  and n finding  square of i and  add to sum. 
+	sum = 0
+	for i in range(1, n+1) : 
+		sum = sum + (i * i) 
+	return sum 
+n = int(input("enter the value of n : "))
+print(squaresum(n)) 
+
+
+# method 2
+
+## n * (n + 1) * (2 * n + 1)/6 
+def sumofsquares(n):
+       sum = n * (n + 1) * (2 * n + 1) // 6
+       return sum
+
+n = int(input("enter the value of n : "))
+print(sumofsquares(n))
+```
+
+#### Remove punctuation from string
+```python
+# Removing punctuations in string 
+# Using regex 
+import re 
+
+# initializing string 
+test_str = "python, is best  program: to learn !!!;"
+
+# printing original string 
+print("The original string is : " + test_str) 
+
+# Removing punctuations in string Using regex 
+res = re.sub(r'[^\w\s]', '', test_str) 
+
+# printing result 
+print("The string after punctuation filter : " + res) 
+
+# output :
+The original string is : python, is best  program: to learn !!!;
+The string after punctuation filter : python is best  program to learn
+
+```
