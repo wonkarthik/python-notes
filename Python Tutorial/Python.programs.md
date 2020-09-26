@@ -131,3 +131,47 @@ else:
        factorial = factorial*i  
    print("The factorial of",num,"is",factorial)
 ```
+#### MAX and Min numbers
+
+```python
+# Given list of numbers
+list = [ 3,2,19,10]
+
+# sorting the given list "list"
+# sort() function sorts the list in ascending order
+list.sort()
+# Displaying the first element of the list
+# which is the smallest number in the sorted list
+print("list of small number : ",list[0])
+print("list of Big number : ",list[-1])
+
+## method 2
+list = [ 87,64,78,99,96 ]
+print("Maximum number in list : ", max(list))
+print("Minimum number in list : ", min(list))
+```
+
+#### sum of cubes 
+An efficient solution is to use direct mathematical formula which is (n ( n + 1 ) / 2) ^ 2
+
+```python
+## method 1
+def sumofcubes(n):
+       sum = 0
+       for i in range (1,n+1):
+          sum += i*i*i
+       return sum
+n = int(input("enter the value of n: "))
+print(sumofcubes(n))           
+
+## method 2
+# Returns the sum of series  with mathematical formula is  (n ( n + 1 ) / 2) ^ 2
+def sumofcubes(n): 
+	x = (n * (n + 1) / 2) 
+	return (int)(x * x) 
+
+# Driver Function 
+n = int(input("Enter the value of number: "))
+print(sumofcubes(n)) 
+
+```
