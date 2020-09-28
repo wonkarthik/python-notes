@@ -63,6 +63,35 @@ else:
 # Prints x and y are equal
 
 ```
+
+#### Python nested if else statement
+In nested if else statements, if statement is nested inside an if statements. So, the nested if statements will be executed only if the expression of main if statement returns TRUE.
+
+Syntax of nested if else in Python.
+
+```python
+if test_expression:
+  if test_expression:
+     block of code
+  else:
+     block of code
+else:
+  block of code
+```
+
+This syntax shows an if else statement nested inside an if else statement.
+
+```python
+num = float(input("Enter a number: "))
+if num >= 0:
+    if num == 0:
+        print("Zero")
+    else:
+        print("Positive number")
+else:
+    print("Negative number")
+```    
+
 #### Substitute for Switch Case
 Unlike other programming languages, Python does not have a ‘switch‘ statement. You can use if…elif…elif sequence as a substitute.
 
