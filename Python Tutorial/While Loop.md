@@ -39,7 +39,27 @@ while x:
     print(x)
     x -= 1
 ```
-
+```python
+i=1    
+number=0    
+b=9    
+number = int(input("Enter the number:"))    
+while i<=10:    
+    print("%d X %d = %d \n"%(number,i,number*i))    
+    i = i+1 
+output :
+Enter the number:10
+10 X 1 = 10 
+10 X 2 = 20 
+10 X 3 = 30 
+10 X 4 = 40 
+10 X 5 = 50 
+10 X 6 = 60 
+10 X 7 = 70 
+10 X 8 = 80 
+10 X 9 = 90 
+10 X 10 = 100     
+```    
 #### Break in while Loop
 Python break statement is used to exit the loop immediately. It simply jumps out of the loop altogether, and the program continues after the loop.
 ```python
