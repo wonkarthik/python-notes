@@ -1,0 +1,3 @@
+# Functions
+
+source: `{{ page.path }}`
