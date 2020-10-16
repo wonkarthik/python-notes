@@ -37,6 +37,75 @@ In the above example, the lambda is constructed as:
 
 ```javascript 
 
-** lambda parameters: expression **
+lambda parameters: expression 
 
 ```
+
+#### Important Characteristics
+##### Single Expression Only
+Unlike a normal function, a lambda function contains only a single expression.
+
+Although, you can spread the expression over multiple lines using parentheses or a multiline string, but it should only remain as a single expression.
+```python
+evenOdd = (lambda x:
+           'odd' if x%2 else 'even')
+
+print(evenOdd(2))
+# Prints even
+
+print(evenOdd(3))
+# Prints odd
+```
+
+##### Immediately Invoked Function Expression (IIFE)
+A lambda function can be immediately invoked. For this reason it is often referred to as an Immediately Invoked Function Expression (IIFE).
+
+Here’s the same previously seen ‘doubler’ lambda function that is defined and then called immediately with 3 as an argument.
+
+```python
+print((lambda x: x*2)(3))
+# Prints 6
+```
+#### Multiple Arguments
+
+You can send as many arguments as you like to a lambda function; just separate them with a comma ,.
+
+Here’s how you’d create a lambda function with multiple arguments:
+```python
+# A lambda function that multiplies two values
+mul = lambda x, y: x*y
+print(mul(2, 5))
+# Prints 10
+# A lambda function that adds three values
+add = lambda x, y, z: x+y+z
+print(add(2, 5, 10))
+# Prints 17
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
