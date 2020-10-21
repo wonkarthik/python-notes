@@ -279,7 +279,7 @@ Let’s create a @debug decorator that will do the following, whenever the funct
 * Print the result
 * Return the modified function for use
 * from functools import wraps
-```
+```python
 # Defining a decorator
 def debug(func):
     @wraps(func)
